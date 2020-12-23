@@ -1,0 +1,47 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: embnet.py
+--------------------------------------------------------------------------------
+embnet.py:10:11: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'embnet.py'
+ outputting to 'embnet2.py'
+--------------------------------------------------------------------------------
+
+10:11: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+18:13: INFO: Added keywords to args of function 'tf.reduce_sum'
+19:26: INFO: Added keywords to args of function 'tf.transpose'
+19:68: INFO: Added keywords to args of function 'tf.transpose'
+27:14: INFO: Renamed 'tf.py_func' to 'tf.compat.v1.py_func'
+29:14: INFO: Renamed 'tf.py_func' to 'tf.compat.v1.py_func'
+58:38: INFO: Renamed 'tf.log' to 'tf.math.log'
+59:37: INFO: Renamed 'tf.log' to 'tf.math.log'
+60:35: INFO: Added keywords to args of function 'tf.reduce_max'
+70:24: INFO: Added keywords to args of function 'tf.reduce_sum'
+79:38: INFO: Renamed 'tf.log' to 'tf.math.log'
+87:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+88:15: INFO: Added keywords to args of function 'tf.pad'
+93:15: INFO: Added keywords to args of function 'tf.pad'
+114:19: INFO: Added keywords to args of function 'tf.reduce_sum'
+115:19: INFO: Added keywords to args of function 'tf.reduce_sum'
+120:15: INFO: Added keywords to args of function 'tf.reduce_sum'
+121:11: INFO: Added keywords to args of function 'tf.reduce_sum'
+175:26: INFO: tf.truncated_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 forsafety (even though they may already have been correct).
+175:26: INFO: Renamed 'tf.truncated_normal_initializer' to 'tf.compat.v1.initializers.truncated_normal'
+185:8: INFO: Renamed 'tf.summary.histogram' to 'tf.compat.v1.summary.histogram'
+190:17: INFO: Added keywords to args of function 'tf.pad'
+209:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+209:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+231:14: INFO: Changed tf.image.resize_bilinear call to tf.image.resize(..., method=tf.image.ResizeMethod.BILINEAR).
+--------------------------------------------------------------------------------
+

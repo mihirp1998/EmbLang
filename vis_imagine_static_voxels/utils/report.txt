@@ -1,0 +1,77 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: voxel.py
+--------------------------------------------------------------------------------
+voxel.py:710:12: WARNING: tf.nn.conv1d called with use_cudnn_on_gpu argument requires manual check: use_cudnn_on_gpu has been removed, behavior is now equivalentto setting it to True.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'voxel.py'
+ outputting to 'voxel.py'
+--------------------------------------------------------------------------------
+
+46:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+47:18: INFO: Added keywords to args of function 'tf.transpose'
+51:18: INFO: Changed tf.to_int32 call to tf.cast(..., dtype=tf.int32).
+74:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+81:16: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+82:16: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+83:16: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+84:22: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+85:23: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+86:22: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+93:20: INFO: Changed tf.to_int32 call to tf.cast(..., dtype=tf.int32).
+93:32: INFO: Added keywords to args of function 'tf.shape'
+94:20: INFO: Changed tf.to_int32 call to tf.cast(..., dtype=tf.int32).
+94:32: INFO: Added keywords to args of function 'tf.shape'
+95:20: INFO: Changed tf.to_int32 call to tf.cast(..., dtype=tf.int32).
+95:32: INFO: Added keywords to args of function 'tf.shape'
+106:17: INFO: Changed tf.to_int32 call to tf.cast(..., dtype=tf.int32).
+108:17: INFO: Changed tf.to_int32 call to tf.cast(..., dtype=tf.int32).
+110:17: INFO: Changed tf.to_int32 call to tf.cast(..., dtype=tf.int32).
+150:22: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+161:19: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+162:19: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+163:19: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+164:19: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+165:19: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+166:19: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+168:23: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+170:23: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+172:23: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+174:23: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+176:23: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+178:23: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+227:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+236:18: INFO: Added keywords to args of function 'tf.transpose'
+241:18: INFO: Added keywords to args of function 'tf.transpose'
+257:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+264:18: INFO: Added keywords to args of function 'tf.transpose'
+269:18: INFO: Added keywords to args of function 'tf.transpose'
+291:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+298:18: INFO: Added keywords to args of function 'tf.transpose'
+303:18: INFO: Added keywords to args of function 'tf.transpose'
+325:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+389:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+465:23: INFO: Renamed 'tf.diag' to 'tf.linalg.tensor_diag'
+632:12: INFO: Added keywords to args of function 'tf.transpose'
+636:11: INFO: Added keywords to args of function 'tf.reduce_max'
+657:27: INFO: Added keywords to args of function 'tf.argmin'
+695:27: INFO: Added keywords to args of function 'tf.argmin'
+696:23: INFO: Renamed 'tf.image.resize_images' to 'tf.image.resize'
+710:12: WARNING: tf.nn.conv1d called with use_cudnn_on_gpu argument requires manual check: use_cudnn_on_gpu has been removed, behavior is now equivalentto setting it to True.
+710:12: INFO: Added keywords to args of function 'tf.nn.conv1d'
+710:12: INFO: Renamed keyword argument for tf.nn.conv1d from value to input
+710:12: INFO: Removed argument use_cudnn_on_gpu for function tf.nn.conv1d
+714:24: INFO: Added keywords to args of function 'tf.reduce_sum'
+719:11: INFO: Added keywords to args of function 'tf.reduce_mean'
+724:11: INFO: Added keywords to args of function 'tf.reduce_mean'
+724:27: INFO: Renamed 'tf.log' to 'tf.math.log'
+--------------------------------------------------------------------------------
+
