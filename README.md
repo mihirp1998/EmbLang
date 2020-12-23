@@ -1,7 +1,6 @@
 # Embodied Language Grounding With 3D Visual Feature Representations
 [Project Page](https://mihirp1998.github.io/project_pages/emblang/)
 
-
 # Code
 ```
 cd vis_imagine_static_voxels
