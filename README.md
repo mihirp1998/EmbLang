@@ -1,6 +1,6 @@
 # Embodied Language Grounding With 3D Visual Feature Representations
 
-This is our updated paper and repository, Please use this instead:
+## IMPORTANT: This is our updated paper and repository, Please use this instead:
 https://github.com/mihirp1998/Disentangling-3D-Prototypical-Nets
 
 
