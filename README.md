@@ -1,8 +1,9 @@
 # Embodied Language Grounding With 3D Visual Feature Representations
 
 ## IMPORTANT: This is our updated paper and repository, Please use this instead:
-As this code only works for 64x64 images, where as the other code works on 256x256 images and that too with less amount of labels.
 https://github.com/mihirp1998/Disentangling-3D-Prototypical-Nets
+As this code only works for 64x64 images, where as the new code works on 256x256 images and also doesn't require as many labels.
+
 
 
 ### Project page
